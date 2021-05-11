@@ -1,0 +1,259 @@
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto; }
+
+/* fin reset */
+/* aqui voy a hacer un stylesheet nuevo para la pagina principal */
+#grilla {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "menu menu" "menu menu" "titulo titulo" "informacion informacion " " imagen imagen " "pie      pie      "; }
+
+main {
+  grid-area: titulo; }
+
+footer {
+  grid-area: pie; }
+
+section {
+  grid-area: informacion; }
+
+nav {
+  grid-area: menu; }
+
+div {
+  grid-area: imagen; }
+
+/* aca le agrego el estilo a las etiquetas section*/
+section {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  border-style: solid;
+  border: solid 1px #020003;
+  display: flex;
+  flex-wrap: wrap; }
+
+/* use bootstrap.css
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  width: 400px;
+  margin-left: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 auto;
+}
+nav li a {
+  background-color: aquamarine;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #f48fb1;
+  transition: all 0.3s;
+}
+
+/* class para textos y etiqueta body*/
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 200%;
+  background: floralwhite; }
+
+.tituloPagina {
+  font-weight: bold;
+  margin-top: 20px; }
+
+.centradoTextos {
+  text-align: center; }
+
+.derechaTextos {
+  text-align: right; }
+
+/* class para imagen */
+.imagenPrincipal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: space-between; }
+
+/* etiqueta footer*/
+footer {
+  display: flex;
+  flex-wrap: wrap; }
+
+/*responsive pagina principal */
+@media (min-width: 768px) {
+  .gridLayout {
+    display: grid;
+    grid-template-areas: "header header header" "titulo titulo titulo" "section section div" "footer footer footer"; }
+  ul {
+    width: 400px; } }
+
+section {
+  color: #020003;
+  font-family: "Montserrat", sans-serif;
+  border-style: solid;
+  border: solid 1px black;
+  display: flex;
+  flex-wrap: wrap; }
+
+.imagenPrincipal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-between; }
+
+@media (min-width: 992px) {
+  .gridLayout {
+    display: grid;
+    grid-template-areas: "header header header header header" "main section section section section" "footer footer footer footer footer"; }
+  ul {
+    width: 400px; } }
+
+section {
+  color: #020003;
+  font-family: "Montserrat", sans-serif;
+  border-style: solid;
+  border: solid 1px black;
+  display: flex;
+  flex-wrap: wrap; }
+
+.imagenPrincipal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }

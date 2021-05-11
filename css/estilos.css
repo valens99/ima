@@ -1,0 +1,274 @@
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto; }
+
+/* fin reset */
+/* aca le agrego el estilo a las etiquetas section*/
+section {
+  color: #f51a63;
+  font-family: "Montserrat", sans-serif;
+  border-style: solid;
+  margin: 50px 500px 50px 20px;
+  border: solid 2px black;
+  padding: 20px 20px 20px 20px; }
+
+/* estilo de las etiquetas nav */
+nav {
+  background-color: aquamarine;
+  border-color: solid;
+  padding: 15px 20px; }
+
+/* class y id para tablas */
+.BordesTablas {
+  border-radius: 20px;
+  background-color: #ff96a1; }
+
+.container-table {
+  width: 90%;
+  background: #ff96a1;
+  margin: 50px auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 3fr 3fr 3fr 3fr; }
+
+.table-header, .table-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px; }
+
+.table-header {
+  font-weight: bold;
+  font-size: 1.5em; }
+
+.table-item {
+  padding: 10px;
+  font-size: 1.2em; }
+
+/* textos */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 200%;
+  background: floralwhite; }
+
+.tituloPagina {
+  font-weight: bold;
+  margin-top: 20px; }
+
+.centradoTextos {
+  text-align: center; }
+
+.justificadotextos {
+  text-align: justify; }
+
+.derechaTextos {
+  text-align: right; }
+
+/* menu */
+/*nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav li a {
+  background-color: aquamarine;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #f48fb1;
+  transition: all 0.3s;
+} */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a:hover {
+      background-color: aquamarine;
+      text-decoration: none;
+      padding: 15px 20px;
+      background-color: #f48fb1;
+      transition: all 0.3s; }
+
+/* estilos de la etiqueta div con img */
+.imagenPrincipal {
+  height: 400px;
+  width: 305px;
+  border: solid black 2px;
+  margin: 10px 200px 50px 700px;
+  overflow: hidden; }
+
+/* sticky contacto */
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 10px; }
+
+/* nuestros cliente*/
+.clientes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: coral;
+  /*height: 229px;
+  width: 220px;*/
+  margin: 30px 50px 20px 50px;
+  padding: 20px 20px 20px 20px; }
+
+.transformacion:hover {
+  transform: translate(0px, -20px); }
+
+/* contacto */
+form fieldset {
+  background: coral;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: center;
+  margin: 50px 200px 200px 200px;
+  flex: 1; }
+
+.ingredientes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between; }
+
+.materiaPrimas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 30px; }
